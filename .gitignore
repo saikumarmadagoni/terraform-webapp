@@ -1,1 +1,19 @@
-vpc/.terraform/*
+vpc/*.tfstate
+vpc/*.tfstate.*
+vpc/*.tfplan
+
+# Ignore .terraform directory where Terraform modules and plugins are stored
+vpc/.terraform/
+vpc/.terraform.lock.hcl
+
+# Ignore crash logs
+vpc/crash.log
+
+# Ignore override files
+vpc/override.tf
+vpc/override.tf.json
+vpc/*.auto.tfvars
+
+# Ignore .terraformrc and terraform.rc files
+vpc/.terraformrc
+vpc/terraform.rc
